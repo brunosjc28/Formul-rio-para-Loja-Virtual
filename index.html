@@ -92,6 +92,14 @@
             Outro: <input type="text" name="nicho_outro">
         </div>
 
+        <div class="section">
+            <label>5. Você já tem uma identidade visual definida?</label><br>
+            <input type="radio" name="identidade_visual" value="sim"> Sim, já escolhi minha paleta de cores e estilo
+            <input type="radio" name="identidade_visual" value="ideias"> Ainda não, mas tenho algumas ideias
+            <input type="radio" name="identidade_visual" value="não"> Não faço ideia de como criar <br>
+            Se já tiver uma paleta de cores, quais são as cores principais da sua marca? <input type="text" name="paleta_cores">
+        </div>
+
         <h2>🔧 Funcionalidades Principais</h2>
         <div class="section">
             <label>7. 🛒 Loja e Carrinho de Compras</label><br>
@@ -119,11 +127,33 @@
             Outros: <input type="text" name="envio_outro">
         </div>
 
+        <div class="section">
+            <label>12. Integração com calculadora de frete automática?</label><br>
+            <input type="radio" name="calculo_frete" value="sim"> Sim
+            <input type="radio" name="calculo_frete" value="não"> Não
+        </div>
+
         <h2>📦 Gerenciamento de Produtos</h2>
         <div class="section">
+            <label>13. Quais funcionalidades sua loja precisa ter?</label><br>
             <input type="checkbox" name="gerenciamento" value="Cadastro de produtos"> Cadastro e edição de produtos <br>
             <input type="checkbox" name="gerenciamento" value="Categorias"> Categorias e subcategorias <br>
             <input type="checkbox" name="gerenciamento" value="Controle de estoque"> Controle de estoque automático <br>
+            <input type="checkbox" name="gerenciamento" value="Variações de produtos"> Variações de produtos (cor, tamanho, etc.) <br>
+        </div>
+
+        <div class="section">
+            <label>14. 👤 Área do Cliente</label><br>
+            <input type="checkbox" name="area_cliente" value="Historico de pedidos"> Histórico de pedidos <br>
+            <input type="checkbox" name="area_cliente" value="Wishlist"> Wishlist (Lista de desejos) <br>
+            <input type="checkbox" name="area_cliente" value="Enderecos"> Gerenciamento de endereços <br>
+        </div>
+
+        <div class="section">
+            <label>15. ⭐ Sistema de Avaliações e Comentários</label><br>
+            Permitir que clientes deixem avaliações e comentários nos produtos?<br>
+            <input type="radio" name="avaliacoes" value="sim"> Sim
+            <input type="radio" name="avaliacoes" value="não"> Não
         </div>
 
         <h2>📢 Marketing e Divulgação</h2>
@@ -132,6 +162,8 @@
             <input type="checkbox" name="marketing" value="E-mail marketing"> E-mail marketing <br>
             <input type="checkbox" name="marketing" value="Anúncios pagos"> Anúncios pagos (Facebook Ads, Google Ads) <br>
             <input type="checkbox" name="marketing" value="Cupons"> Promoções e cupons de desconto <br>
+            <input type="checkbox" name="marketing" value="Instagram Shopping"> Integração com Instagram Shopping <br>
+            <input type="checkbox" name="marketing" value="Chat online"> Chat online (WhatsApp, Messenger) <br>
         </div>
 
         <h2>⏳ Prazo e Investimento</h2>
@@ -140,8 +172,63 @@
             <input type="text" name="prazo">
         </div>
 
-        <button type="submit">Enviar Formulário</button>
-    </form>
+        <div class="section">
+            <label>18. Possui um orçamento definido?</label><br>
+            <input type="radio" name="orçamento" value="sim"> Sim
+            <input type="radio" name="orçamento" value="não"> Não <br>
+            Se sim, qual a faixa de investimento? <input type="text" name="orçamento_faixa">
+        </div>
 
-</body>
-</html>
+        <h2>🌐 Hospedagem e Servidor</h2>
+        <div class="section">
+            <label>19. Plataforma desejada para a loja online:</label><br>
+            <input type="checkbox" name="plataforma" value="Shopify"> Shopify <br>
+            <input type="checkbox" name="plataforma" value="WooCommerce"> WooCommerce (WordPress) <br>
+            <input type="checkbox" name="plataforma" value="Nuvemshop"> Nuvemshop <br>
+            <input type="checkbox" name="plataforma" value="Tray"> Tray <br>
+            Outro: <input type="text" name="plataforma_outro">
+        </div>
+
+        <div class="section">
+            <label>20. Caso opte por WooCommerce (WordPress), já possui um serviço de hospedagem?</label><br>
+            <input type="radio" name="hospedagem_woocommerce" value="sim"> Sim
+            <input type="radio" name="hospedagem_woocommerce" value="não"> Não <br>
+            Se sim, qual? <input type="text" name="hospedagem_woocommerce_nome">
+        </div>
+
+        <div class="section">
+            <label>21. Tipo de hospedagem desejado:</label><br>
+            <input type="radio" name="hospedagem_tipo" value="Compartilhada"> Compartilhada (mais barata, ideal para lojas pequenas) <br>
+            <input type="radio" name="hospedagem_tipo" value="VPS"> VPS (melhor performance, recomendado para lojas médias/grandes) <br>
+            <input type="radio" name="hospedagem_tipo" value="Cloud"> Cloud (escalabilidade automática, melhor custo-benefício para crescimento) <br>
+            <input type="radio" name="hospedagem_tipo" value="Dedicado"> Servidor Dedicado (alto desempenho, indicado para grandes operações) <br>
+        </div>
+
+        <div class="section">
+            <label>22. Requisitos da hospedagem:</label><br>
+            Certificado SSL incluso? <input type="radio" name="ssl" value="sim"> Sim <input type="radio" name="ssl" value="não"> Não <br>
+            Suporte a PHP e MySQL? <input type="radio" name="php_mysql" value="sim"> Sim <input type="radio" name="php_mysql" value="não"> Não <br>
+            Backups automáticos? <input type="radio" name="backups" value="sim"> Sim <input type="radio" name="backups" value="não"> Não <br>
+            CDN para melhor performance? <input type="radio" name="cdn" value="sim"> Sim <input type="radio" name="cdn" value="não"> Não <br>
+        </div>
+
+        <h2>📧 Domínio e E-mails Corporativos</h2>
+        <div class="section">
+            <label>23. O domínio já está registrado?</label><br>
+            <input type="radio" name="dominio" value="sim"> Sim
+            <input type="radio" name="dominio" value="não"> Não <br>
+            Se sim, qual? <input type="text" name="dominio_nome">
+        </div>
+
+        <div class="section">
+            <label>24. Precisa de contas de e-mail personalizadas (@sualoja.com)?</label><br>
+            <input type="radio" name="email_personalizado" value="sim"> Sim
+            <input type="radio" name="email_personalizado" value="não"> Não
+        </div>
+
+        <h2>📄 Tipos de Páginas Necessárias</h2>
+        <div class="section">
+            <label>25. Quais páginas sua loja precisa ter?</label><br>
+            <input type="checkbox" name="paginas" value="Página inicial personalizada"> Página inicial personalizada <br>
+            <input type="checkbox" name="paginas" value="Página de categorias"> Página de categorias e produtos <br>
+            <input type="
