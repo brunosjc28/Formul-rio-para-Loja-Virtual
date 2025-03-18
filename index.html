@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Criação de Loja Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>📌 Sobre Você</h2>
+        <div class="section">
+            <label>1. Já vende produtos online?</label><br>
+            <input type="radio" name="vende_online" value="sim"> Sim
+            <input type="radio" name="vende_online" value="não"> Não
+        </div>
+
+        <div class="section">
+            <label>2. Se sim, onde você vende atualmente?</label><br>
+            <div class="checkbox-group">
+                <input type="checkbox" name="venda" value="Instagram"> Instagram <br>
+                <input type="checkbox" name="venda" value="WhatsApp"> WhatsApp <br>
+                <input type="checkbox" name="venda" value="Marketplace"> Marketplace (Shopee, Mercado Livre, etc.) <br>
+                <input type="checkbox" name="venda" value="Loja própria"> Loja própria <br>
+                <input type="checkbox" name="venda_outro" value="outro"> Outros: <input type="text" name="venda_outro_text">
+            </div>
+        </div>
+
+        <h2>🛍 Sobre a Sua Loja Online</h2>
+        <div class="section">
+            <label>3. Já tem um nome para sua loja?</label><br>
+            <input type="radio" name="tem_nome" value="sim"> Sim
+            <input type="radio" name="tem_nome" value="não"> Não <br>
+            Se sim, qual? <input type="text" name="nome_loja">
+        </div>
+
+        <div class="section">
+            <label>4. Qual o nicho da sua loja?</label><br>
+            <input type="checkbox" name="nicho" value="Moda"> Moda <br>
+            <input type="checkbox" name="nicho" value="Beleza e Maquiagem"> Beleza e Maquiagem <br>
+            <input type="checkbox" name="nicho" value="Acessórios"> Acessórios <br>
+            <input type="checkbox" name="nicho" value="Saúde e Bem-estar"> Saúde e Bem-estar <br>
+            <input type="checkbox" name="nicho" value="Decoração"> Decoração <br>
+            Outro: <input type="text" name="nicho_outro">
+        </div>
+
+        <h2>🔧 Funcionalidades Principais</h2>
+        <div class="section">
+            <label>7. 🛒 Loja e Carrinho de Compras</label><br>
+            <input type="checkbox" name="carrinho" value="Carrinho integrado"> Sistema de carrinho de compras integrado <br>
+            <input type="checkbox" name="checkout" value="Checkout simplificado"> Checkout simplificado (one-page checkout) <br>
+            <input type="checkbox" name="frete" value="Cálculo de frete"> Cálculo automático de frete e prazos <br>
+        </div>
+
+        <div class="section">
+            <label>8. 💳 Integrações de Pagamento</label><br>
+            <input type="checkbox" name="pagamento" value="Pix"> Pix <br>
+            <input type="checkbox" name="pagamento" value="Boleto"> Boleto Bancário <br>
+            <input type="checkbox" name="pagamento" value="Cartão"> Cartão de Crédito e Débito <br>
+            <input type="checkbox" name="pagamento" value="PayPal"> PayPal <br>
+            Outros: <input type="text" name="pagamento_outro">
+        </div>
+
+        <h2>🚚 Sistema de Frete e Entrega</h2>
+        <div class="section">
+            <label>11. Métodos de envio:</label><br>
+            <input type="checkbox" name="envio" value="Correios"> Correios <br>
+            <input type="checkbox" name="envio" value="Transportadora"> Transportadora <br>
+            <input type="checkbox" name="envio" value="Retirada"> Retirada na loja <br>
+            <input type="checkbox" name="envio" value="Motoboy"> Entrega por motoboy <br>
+            Outros: <input type="text" name="envio_outro">
+        </div>
+
+        <h2>📦 Gerenciamento de Produtos</h2>
+        <div class="section">
+            <input type="checkbox" name="gerenciamento" value="Cadastro de produtos"> Cadastro e edição de produtos <br>
+            <input type="checkbox" name="gerenciamento" value="Categorias"> Categorias e subcategorias <br>
+            <input type="checkbox" name="gerenciamento" value="Controle de estoque"> Controle de estoque automático <br>
+        </div>
+
+        <h2>📢 Marketing e Divulgação</h2>
+        <div class="section">
+            <label>16. Quais estratégias deseja utilizar?</label><br>
+            <input type="checkbox" name="marketing" value="E-mail marketing"> E-mail marketing <br>
+            <input type="checkbox" name="marketing" value="Anúncios pagos"> Anúncios pagos (Facebook Ads, Google Ads) <br>
+            <input type="checkbox" name="marketing" value="Cupons"> Promoções e cupons de desconto <br>
+        </div>
+
+        <h2>⏳ Prazo e Investimento</h2>
+        <div class="section">
+            <label>17. Qual o prazo esperado para o lançamento?</label><br>
+            <input type="text" name="prazo">
+        </div>
+
+        <button type="submit">Enviar Formulário</button>
+    </form>
+
+</body>
+</html>
